@@ -1,0 +1,37 @@
+{
+  "checksum": "05b297aa85a9116d740d0336db95d0e3",
+  "root": "esy-ninja@link-dev:./package.json",
+  "node": {
+    "esy-python@archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83@54bff35c": {
+      "id":
+        "esy-python@archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83@54bff35c",
+      "name": "esy-python",
+      "version":
+        "archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83"
+        ]
+      },
+      "overrides": [ "esy.lock/overrides/54bff35c4f50c0d5ca15123eb0f46fdf" ],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-ninja@link-dev:./package.json": {
+      "id": "esy-ninja@link-dev:./package.json",
+      "name": "esy-ninja",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [
+        "esy-python@archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83@54bff35c"
+      ],
+      "devDependencies": []
+    }
+  }
+}

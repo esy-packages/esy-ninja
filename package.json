@@ -1,0 +1,16 @@
+{
+  "name": "esy-ninja",
+  "version": "0.1.0",
+  "description": "Ninja packaged for esy",
+  "license": "MIT",
+  "esy": {
+    "buildsInSource": true,
+    "build": [
+      "./configure.py --bootstrap"
+    ],
+    "install": []
+  },
+  "dependencies": {
+    "esy-python": "prometheansacrifice/esy-python#fd54c73ea47b361d530b501c9409ca41822eb36b"
+  }
+}
