@@ -26,6 +26,8 @@ jobs:
         displayName: "esy install"
       - script: "esy build"
         displayName: "esy build"
+      - script: "esy npm-release"
+        displayName: "esy npm-release"
       - template: utils/publish-build-cache.yml
       - task: PublishBuildArtifacts@1
         displayName: "Publish Artifact: ${{ parameters.platform }}"
