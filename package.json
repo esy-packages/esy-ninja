@@ -14,7 +14,9 @@
     "build": [
       "./configure.py --bootstrap"
     ],
-    "install": []
+    "install": [                                                                                                                                                                                                                                                                
+      "cp ./ninja #{self.bin}"                                                                                                                                                                                                                                                  
+    ]  
   },
   "dependencies": {
     "esy-python": "esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96"
