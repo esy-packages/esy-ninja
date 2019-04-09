@@ -5,6 +5,12 @@
   "license": "MIT",
   "esy": {
     "buildsInSource": true,
+    "exportedEnv": {
+      "PATH": {
+        "scope": "global",
+        "val": "#{ self.bin : $PATH }"
+      }
+    },
     "build": [
       "./configure.py --bootstrap"
     ],
