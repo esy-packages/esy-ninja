@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/prometheansacrifice/esy-packages/_apis/build/status/prometheansacrifice.esy-ninja?branchName=master)](https://dev.azure.com/prometheansacrifice/esy-packages/_build/latest?definitionId=11&branchName=master)
+
 Ninja is a small build system with a focus on speed.
 https://ninja-build.org/
 
