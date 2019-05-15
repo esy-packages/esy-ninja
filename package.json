@@ -12,11 +12,11 @@
       }
     },
     "build": [
-      "./configure.py --bootstrap"
+      "python3 ./configure.py --bootstrap"
     ],
-    "install": [                                                                                                                                                                                                                                                                
-      "cp ./ninja #{self.bin}"                                                                                                                                                                                                                                                  
-    ]  
+    "install": [
+      "cp ./ninja #{self.bin}"
+    ]
   },
   "dependencies": {
     "esy-python": "esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96"

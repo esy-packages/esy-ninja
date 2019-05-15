@@ -1,21 +1,39 @@
 {
-  "checksum": "05b297aa85a9116d740d0336db95d0e3",
+  "checksum": "075b88fb77ed3745d55d6a734c6743b1",
   "root": "esy-ninja@link-dev:./package.json",
   "node": {
-    "esy-python@archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83@54bff35c": {
+    "esy-zlib@github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15@d41d8cd9": {
       "id":
-        "esy-python@archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83@54bff35c",
-      "name": "esy-python",
+        "esy-zlib@github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15@d41d8cd9",
+      "name": "esy-zlib",
       "version":
-        "archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83",
+        "github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83"
+          "github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15"
         ]
       },
-      "overrides": [ "esy.lock/overrides/54bff35c4f50c0d5ca15123eb0f46fdf" ],
+      "overrides": [],
       "dependencies": [],
+      "devDependencies": []
+    },
+    "esy-python@github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96@d41d8cd9": {
+      "id":
+        "esy-python@github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96@d41d8cd9",
+      "name": "esy-python",
+      "version":
+        "github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96",
+      "source": {
+        "type": "install",
+        "source": [
+          "github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [
+        "esy-zlib@github:prometheansacrifice/esy-zlib#f204718d6f3b8c11ec3e4cddad299b723107bf15@d41d8cd9"
+      ],
       "devDependencies": []
     },
     "esy-ninja@link-dev:./package.json": {
@@ -29,7 +47,7 @@
       },
       "overrides": [],
       "dependencies": [
-        "esy-python@archive:https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz#md5:99f78ecbfc766ea449c4d9e7eda19e83@54bff35c"
+        "esy-python@github:esy-packages/esy-python#4229568c55ab77a315963b255e44cf0f43223c96@d41d8cd9"
       ],
       "devDependencies": []
     }
