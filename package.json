@@ -8,8 +8,15 @@
     "exportedEnv": {
       "PATH": {
         "scope": "global",
-        "val": "#{ self.bin : $PATH }"
+        "val": "#{self.bin}:$PATH"
+      },
+      "PYTHONPATH": {
+        "scope": "global",
+        "val": "#{self.install / 'lib' / 'python3.7' / 'site-packages'}:$PYTHONPATH"
       }
+    },
+    "buildEnv": {
+      "PYTHONPATH": "#{self.install / 'lib' / 'python3.7' / 'site-packages' }:$PYTHONPATH"
     },
     "build": [
       "python3 ./configure.py --bootstrap"
