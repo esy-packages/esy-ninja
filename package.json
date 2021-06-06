@@ -12,11 +12,11 @@
       },
       "PYTHONPATH": {
         "scope": "global",
-        "val": "#{esy-python.lib / 'python3.7' / 'site-packages' : self.install / 'lib' / 'python3.7' / 'site-packages'}:$PYTHONPATH"
+        "val": "#{esy-python.lib / 'python3.7' / 'site-packages'}:#{self.install / 'lib' / 'python3.7' / 'site-packages'}:$PYTHONPATH"
       }
     },
     "buildEnv": {
-      "PYTHONPATH": "#{esy-python.lib / 'python3.7' / 'site-packages' : self.install / 'lib' / 'python3.7' / 'site-packages' }:$PYTHONPATH"
+      "PYTHONPATH": "#{esy-python.lib / 'python3.7' / 'site-packages'}:#{self.install / 'lib' / 'python3.7' / 'site-packages' }:$PYTHONPATH"
     },
     "build": [
       "python3 ./configure.py --bootstrap"
